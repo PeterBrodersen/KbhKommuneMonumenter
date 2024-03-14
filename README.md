@@ -1,8 +1,22 @@
-# KbhKommuneMonumenter
-Berigelse af GeoJSON-fil fra Københavns Kommune for monumenter i kommunen
+# Berigelse af GeoJSON-fil for monumenter i Københavns Kommune
 
 ## Formål
-Scriptet beriger GeoJSON-fil fra Københavns Kommune
+PHP-scriptet beriger GeoJSON-filen med monumenter fra Københavns Kommune med oplysninger om:
+* beskrivelse
+* kunstner
+* datering
+* placering
+* mål
+* typer (kategori af monument)
+* materialer
+* ejer
+* giver
+* litteratur
+* link til værket
+
+Ovennævnte data stammer fra de individuelle monumenters undersider.
+
+Ikke alle monumenter fra Københavns Kommune er med i GeoJSON-filen i første omgang. I skrivende stund (marts 2024) har bl.a. værket [Zygote](https://kk.sites.itera.dk/apps/kk_monuments/index.php?id=543) (2023) ingen koordinater og er dermed ikke inkluderet i filen.
 
 ## Statisk kopi
 Hent GeoJSON-filen [københavn_monumenter_beriget.geojson](københavn_monumenter_beriget.geojson) og indlæs den i dit favorit-GIS-program.
@@ -46,4 +60,3 @@ Københavns Kommune:
 * [Monumenter i København, liste](https://kk.sites.itera.dk/apps/kk_monuments/index_liste.php)
 * [GeoJSON-fil for monumenter](https://kk.sites.itera.dk/apps/kk_monuments/data_monuments_datakk_geojson.php)
 Bemærk, at GeoJSON-filen er indkapslet i et array med [ ]-tegn. Fjern første og sidste tegn i filen for at danne en gyldig GeoJSON-fil
-
